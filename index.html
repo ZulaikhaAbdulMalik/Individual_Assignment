@@ -1,0 +1,139 @@
+<html>
+<head>
+<link href="Assest/CSS/style.css" rel="stylesheet">
+
+<title>MULTIMEDIA</title>
+</head>
+<body>
+
+
+<!--- INSERTING VIDEO --->
+
+	<video width="100%" autoplay muted loop>
+	<source src="Assest/video/maxwell.mp4" type="video/mp4">
+	</video>
+
+<br><br>
+
+<hr color= "black">
+<marquee direction="left" scrollamount="12"> 
+<center> <h1 color= "black"> "HELLO, WELCOME TO THIS WEBSITE ! YOU, HUMAN WILL BE GREETED BY CATS"</h1></center>
+
+</marquee>
+
+<br>
+
+<!--- INSERTING AUDIO --->
+	<hr color= "black">
+	<center> <b> My Favorite Songs ='v'= </b></center>
+	<hr color= "black">
+<br>
+<center>
+<pre> 
+People						Trance
+</pre>
+	<audio controls>
+	<source src="Assest/audio/People.mp3" type="audio/mp3">
+	</audio>
+
+
+	<audio controls>
+	<source src="Assest/audio/Trance.mp3" type="audio/mp3">
+	</audio>
+ 
+<br>
+<pre> 
+M.							Overdose						Consume
+</pre>
+	<audio controls>
+	<source src="Assest/audio/M.mp3" type="audio/mp3">
+	</audio>
+
+	<audio controls>
+	<source src="Assest/audio/Overdose.mp3" type="audio/mp3">
+	</audio>
+
+
+	<audio controls>
+	<source src="Assest/audio/Consume.mp3" type="audio/mp3">
+	</audio>
+</center> 
+
+
+<br><br>
+
+<!--- EMBEDDING PDF FILE ---->
+<hr color= "black">
+<center> <b> The Cat Speech by Zoey </b></center>
+<hr color= "black">
+<br>
+<center>
+<iframe src="Assest/pdf/The Cat Speech.pdf" width="80%" height="1200px">
+</iframe>
+</center>
+<br><br>
+
+<hr color= "black">
+<center> <b>POP CAT LOVE SKITTLES</b></center>
+<hr color= "black">
+<br>
+<center>
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/ZdNCgBvvCSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</center>
+<br>
+
+<hr color= "black">
+<center> <b>THE SADDEST SONG</b></center>
+<hr color= "black">
+<br>
+<center>
+
+<iframe width="800" height="500" src="https://www.youtube.com/embed/-8bO8e9JxZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<center>
+<br><br>
+In case you forgot the time :)
+<br>
+<!--- TO CALL THE CSS --->
+<center>
+<div id="clock">6:41:45</div>
+<script src="clock2.js"></script>
+<br>
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
+  
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM"; 
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
+  
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+  
+    let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+  
+    document.getElementById("clock")
+            .innerHTML = currentTime;
+}
+showTime();
+</script>
+</center>
+
+</body>
+
+
+</html>
